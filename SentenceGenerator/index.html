@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Sentence Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Recursive Sentence Generator</h2>
+
+        <textarea id="inputTemplate" oninput="updatePreview()">The [adjective] [noun] [verb] the [noun].</textarea>
+
+        <div class="buttons">
+            <button id="generateBtn">Generate</button> <!-- ✅ No onclick here -->
+
+            <!-- <button onclick="generate()">Generate</button> -->
+            <button id="toggleMode">🌙 Dark Mode</button>
+        </div>
+
+        <p class="preview"><strong>Live Preview:</strong> <span id="livePreview"></span></p>
+        <p class="output"><strong>Generated Sentence:</strong> <span id="output"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
